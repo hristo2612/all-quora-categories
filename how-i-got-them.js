@@ -9,7 +9,7 @@ function getAllTreeTopics(topicsList) {
         let currentTopicEl = topic.querySelector('span.TopicNameSpan.TopicName');
         let currentTopicName =  currentTopicEl ? currentTopicEl.innerText : 'NOT AVAILABLE';
         let parentOfCurrentTopicEl = currentTopicEl ? currentTopicEl.closest('.light') : null;
-        let children = [];
+        let children = {};
         if (parentOfCurrentTopicEl) {
             let childListEl = parentOfCurrentTopicEl.nextSibling;
             if (childListEl && childListEl.innerHTML !== "" && childListEl.childElementCount > 0 && childListEl.children) {
