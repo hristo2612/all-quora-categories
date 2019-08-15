@@ -1,0 +1,1 @@
+# A JSON file of all Major Categories in Quora.com
